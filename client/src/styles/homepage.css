@@ -1,0 +1,141 @@
+#primaryBtn {
+  background-color: #00ad34;
+  border-radius: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Poppins-Medium";
+}
+#homepageSection1-leftPane {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#homepageSection1-RightPane {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepageSection1-leftPane-heading {
+  text-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+}
+#homepageSection1-leftPane-reviewContainer {
+  color: white;
+  width: 880px;
+  display: flex;
+  margin-top: 2.5rem;
+}
+.homepageSection1-leftPane-reviewPane {
+  border-right: 1px solid white;
+  padding: 0 2rem;
+}
+.homepageSection1-leftPane-reviewPaneHeading {
+  font-size: 3rem;
+  font-family: "Poppins-Bold";
+}
+.homepageSection1-leftPane-reviewPaneSubHeading {
+  font-family: "Poppins-Regular";
+}
+@media screen and (min-width: 1120px) {
+  #homepageSection1-leftPane-heading {
+    line-height: 45px !important;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #primaryBtn {
+    width: 150px !important;
+    height: 40px !important;
+  }
+  #homepageSection1-leftPane-heading {
+    font-size: 2rem !important;
+  }
+  #homepageSection1-leftPane-heading > span {
+    font-size: 1.7rem !important;
+  }
+  #homepageSection1-leftPane {
+    width: 60%;
+  }
+  #homepageSection1-RightPane {
+    width: 40%;
+  }
+  #homepageSection1-leftPane-reviewContainer {
+    color: white;
+    width: 500px;
+    display: flex;
+    margin-top: 2.5rem;
+  }
+  .homepageSection1-leftPane-reviewPane {
+    border-right: 1px solid white;
+    padding: 0 2rem;
+  }
+  .homepageSection1-leftPane-reviewPaneHeading {
+    font-size: 2rem;
+    font-family: "Poppins-Bold";
+  }
+  .homepageSection1-leftPane-reviewPaneSubHeading {
+    font-size: 0.9rem;
+    font-family: "Poppins-Regular";
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #homepageSection1-leftPane-reviewContainer {
+    color: white;
+    width: 500px;
+    display: flex;
+    margin-top: 2.5rem;
+  }
+  .homepageSection1-leftPane-reviewPane {
+    border-right: 1px solid white;
+    padding: 0 0.5rem;
+  }
+  .homepageSection1-leftPane-reviewPaneHeading {
+    font-size: 1.5rem;
+    /* background-color: red; */
+    width: min-content;
+    font-family: "Poppins-Bold";
+  }
+  .homepageSection1-leftPane-reviewPaneSubHeading {
+    font-size: 0.7rem;
+    font-family: "Poppins-Regular";
+    width: min-content;
+  }
+}
+@media screen and (max-width: 530px) {
+  #homepageSection1-leftPane-heading {
+    width: auto !important;
+  }
+  #homepageSection1-contentContainer {
+    flex-direction: column !important;
+  }
+  #homepageSection1-leftPane {
+    width: 100%;
+  }
+  #homepageSection1-RightPane {
+    width: 100%;
+    display: none;
+  }
+  #homepageSection1-leftPane-reviewContainer {
+    color: white;
+    width: 270px;
+    display: flex;
+    margin-top: 2.5rem;
+  }
+  .homepageSection1-leftPane-reviewPane {
+    border-right: 1px solid white;
+    padding: 0 1rem;
+  }
+  .homepageSection1-leftPane-reviewPaneHeading {
+    font-size: 1rem;
+    font-family: "Poppins-Bold";
+  }
+  .homepageSection1-leftPane-reviewPaneSubHeading {
+    font-size: 0.7rem;
+    font-family: "Poppins-Regular";
+  }
+}

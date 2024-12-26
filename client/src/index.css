@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "integralCfBold";
+  src: url("/Fontspring-DEMO-integralcf-bold.otf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/Poppins-Regular.ttf");
+}
+
+/* @font-face {
+  font-family: "integralCfBold";
+  src: url("../public/Fontspring-DEMO-integralcf-bold.otf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../public/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../public/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../public/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../public/Poppins-Regular.ttf");
+} */
