@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "../index.css";
 import "../styles/homepage.css";
 import { secondaryText } from "../constants/colors";
+import { FaWhatsapp } from "react-icons/fa";
+import { Tooltip } from "react-tooltip";
 export default function HomePage() {
   const [sectionHeight, setSectionHeight] = useState(0);
   useEffect(() => {
@@ -14,6 +16,32 @@ export default function HomePage() {
   }, []);
   return (
     <>
+    <Tooltip anchorSelect="#whatsappBtn" place={"left"} style={{zIndex: 1}}>Whatsapp</Tooltip>
+      <a
+        className="whatsappBtn"
+        id="whatsappBtn"
+        onClick={() => {window.open('https://wa.me/+923164959334', '_blank');}}
+        style={{
+          position: "fixed",
+          zIndex: 1,
+          bottom: "20px",
+          right: "20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#25D366",
+          color: "white",
+          border: "none",
+          width: "3.5rem",
+          height: "3.5rem",
+          borderRadius: "2.5rem",
+          // padding: "10px 20px",
+          cursor: "pointer",
+          // fontSize: "16px",
+        }}
+      >
+        <FaWhatsapp style={{ fontSize: "2.5rem" }} />
+      </a>
       <section
         className="container-fluid"
         style={{
@@ -75,32 +103,57 @@ export default function HomePage() {
               Browse through our diverse range of plants, garden accessories and
               landscape services.
             </div>
-            <div
-              id="primaryBtn"
+            <button
+              id="shopNowBtn"
+              className="primaryBtn"
               style={{
                 width: "210px",
                 height: "45px",
+                border: 'none',
+                outline: 'none'
               }}
             >
               Shop Now
-            </div>
+            </button>
             <div id="homepageSection1-leftPane-reviewContainer">
-              <div className="homepageSection1-leftPane-reviewPane" style={{paddingLeft:0}}>
-                <div className="homepageSection1-leftPane-reviewPaneHeading">200+</div>
-                <div className="homepageSection1-leftPane-reviewPaneSubHeading">International Customers</div>
+              <div
+                className="homepageSection1-leftPane-reviewPane"
+                style={{ paddingLeft: 0 }}
+              >
+                <div className="homepageSection1-leftPane-reviewPaneHeading">
+                  200+
+                </div>
+                <div className="homepageSection1-leftPane-reviewPaneSubHeading">
+                  International Customers
+                </div>
               </div>
               <div className="homepageSection1-leftPane-reviewPane">
-                <div className="homepageSection1-leftPane-reviewPaneHeading">2,000+</div>
-                <div className="homepageSection1-leftPane-reviewPaneSubHeading">High Quality Products</div>
+                <div className="homepageSection1-leftPane-reviewPaneHeading">
+                  2,000+
+                </div>
+                <div className="homepageSection1-leftPane-reviewPaneSubHeading">
+                  High Quality Products
+                </div>
               </div>
-              <div className="homepageSection1-leftPane-reviewPane" style={{borderRight:"none"}}>
-                <div className="homepageSection1-leftPane-reviewPaneHeading">30,000+</div>
-                <div className="homepageSection1-leftPane-reviewPaneSubHeading">Happy Customers</div>
+              <div
+                className="homepageSection1-leftPane-reviewPane"
+                style={{ borderRight: "none" }}
+              >
+                <div className="homepageSection1-leftPane-reviewPaneHeading">
+                  30,000+
+                </div>
+                <div className="homepageSection1-leftPane-reviewPaneSubHeading">
+                  Happy Customers
+                </div>
               </div>
             </div>
           </div>
           <div id="homepageSection1-RightPane">
-            <img src="/assets/icon with shadow.png" alt="" style={{ width: "100%" }} />
+            <img
+              src="/assets/icon with shadow.png"
+              alt=""
+              style={{ width: "100%" }}
+            />
           </div>
         </div>
       </section>

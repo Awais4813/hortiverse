@@ -1,4 +1,5 @@
 import { navBarBG, primaryText } from "../constants/colors";
+import "../styles/navbar.css";
 
 export default function NavBar() {
   return (
@@ -55,10 +56,14 @@ export default function NavBar() {
                   alignItems: "center",
                 }}
               >
-                <a
+                <button
+                  id="navLogo"
                   className="navbar-brand d-lg-flex d-none"
-                  href="#"
+                  // href="#"
                   style={{
+                    backgroundColor: "transparent",
+                    outline: "none",
+                    border: "none",
                     // display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
@@ -69,11 +74,11 @@ export default function NavBar() {
                     alt="hortiverse"
                     width={"130px"}
                   />
-                </a>
+                </button>
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle navItem"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -89,7 +94,7 @@ export default function NavBar() {
                       href="#"
                       style={{ color: primaryText }}
                     >
-                      Action
+                      Plants
                     </a>
                   </li>
                   <li>
@@ -98,10 +103,37 @@ export default function NavBar() {
                       href="#"
                       style={{ color: primaryText }}
                     >
-                      Another action
+                      Garden Accessories
                     </a>
                   </li>
                   <li>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      style={{ color: primaryText }}
+                    >
+                      Landscape Designing
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      style={{ color: primaryText }}
+                    >
+                      Garden Care
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      style={{ color: primaryText }}
+                    >
+                      Courses
+                    </a>
+                  </li>
+                  {/* <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
@@ -112,13 +144,12 @@ export default function NavBar() {
                     >
                       Something else here
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link active"
-                  aria-current="page"
+                  className="nav-link navItem"
                   href="#"
                   style={{ color: primaryText }}
                 >
@@ -126,14 +157,22 @@ export default function NavBar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" style={{ color: primaryText }}>
-                  New Arrivals
+                <a
+                  className="nav-link navItem"
+                  href="#"
+                  style={{ color: primaryText }}
+                >
+                  Coming Soon
                 </a>
               </li>
 
               <li className="nav-item me-4">
-                <a className="nav-link" href="#" style={{ color: primaryText }}>
-                  Brands
+                <a
+                  className="nav-link navItem"
+                  href="#"
+                  style={{ color: primaryText }}
+                >
+                  Landscape Services
                 </a>
               </li>
               <div className="d-lg-flex flex-row d-none justify-content-center align-items-center">
@@ -149,13 +188,27 @@ export default function NavBar() {
                       height: "35px",
                     }}
                   />
-                  <img
-                    src="/assets/search.png"
-                    alt=""
-                    width={"25px"}
-                    height={"25px"}
-                    className="my-auto me-4"
-                  />
+                  <button
+                    // className="me-4"
+                    className="me-3"
+                    id="navSearchBtn"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                      backgroundColor: "transparent",
+                      borderRadius: "10px",
+                      outline: "none",
+                      border: "none",
+                    }}
+                  >
+                    <img
+                      src="/assets/search.png"
+                      alt=""
+                      width={"25px"}
+                      height={"25px"}
+                      className="my-auto"
+                    />
+                  </button>
                 </form>
                 <div
                   className="navbar-nav mb-2 mb-lg-0 my-lg-0 my-3"
@@ -165,17 +218,42 @@ export default function NavBar() {
                     alignItems: "center",
                   }}
                 >
-                  <img
+                  <button
                     className="me-3"
-                    src="/assets/shopping-cart.png"
-                    alt=""
-                    style={{ width: "35px", height: "35px" }}
-                  />
-                  <img
-                    src="/assets/trackorder.png"
-                    alt=""
-                    style={{ width: "100px" }}
-                  />
+                    id="navCartBtn"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                      backgroundColor: "transparent",
+                      borderRadius: "10px",
+                      // backgroundColor:"white",
+                      outline: "none",
+                      border: "none",
+                    }}
+                  >
+                    <img
+                      // className="me-3"
+                      src="/assets/shopping-cart.png"
+                      alt=""
+                      style={{ width: "35px", height: "35px" }}
+                    />
+                  </button>
+                  <button
+                    id="navTrackOrderBtn"
+                    style={{
+                      width: "auto",
+                      height: "auto",
+                      backgroundColor: "transparent",
+                      outline: "none",
+                      border: "none",
+                    }}
+                  >
+                    <img
+                      src="/assets/trackorder.png"
+                      alt=""
+                      style={{ width: "100px" }}
+                    />
+                  </button>
                 </div>
               </div>
             </ul>

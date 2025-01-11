@@ -1,12 +1,35 @@
-#primaryBtn {
+#whatsappBtn{
+  /* transform: scale(1.2); */
+  transition: all 0.1s ease-in-out;
+}
+#whatsappBtn:hover{
+  transform: scale(1.2);
+}
+#shopNowBtn:hover{
+  transform: scale(1.1);
+  /* border-radius: 0; */
+  /* border-top-left-radius: 0;
+  border-bottom-right-radius: 0; */
+  /* border-top-right-radius: 418px;
+  border-bottom-left-radius: 418px; */
+}
+#shopNowBtn{
+  transition: all 0.2s linear;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 410px;
+  border-bottom-right-radius: 410px;
+}
+.primaryBtn {
   background-color: #00ad34;
-  border-radius: 410px;
+  /* border-radius: 410px; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "Poppins-Medium";
 }
+
 #homepageSection1-leftPane {
   width: 70%;
   height: 100%;
@@ -47,7 +70,7 @@
   }
 }
 @media screen and (max-width: 1120px) {
-  #primaryBtn {
+  .primaryBtn {
     width: 150px !important;
     height: 40px !important;
   }
